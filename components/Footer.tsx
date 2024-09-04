@@ -62,7 +62,7 @@ export function Footer() {
                         <p>Logo</p>
                     </Link>
                     <p className="text-sm text-neutral-700">
-                        © Agrilinks SL. {new Date().getFullYear()}
+                        © Gento Group. {new Date().getFullYear()}
                     </p>
                 </div>
             </FadeIn>
