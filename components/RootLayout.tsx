@@ -123,7 +123,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             >
                 <motion.div
                     layout
-
                 >
                     <main >{children}</main>
                     <Footer />
