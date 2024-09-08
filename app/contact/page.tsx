@@ -1,13 +1,73 @@
 import { Metadata } from "next";
 
-import HeroSection from "@/components/HeroSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import ServicesSection from "@/components/ServicesSection";
-
 export const metadata: Metadata = {
     title: 'Contact Us',
     description:
         'Interested in exploring our projects or contemplating Gento Group of Companies.SL.Ltd for your upcoming venture?'
+}
+
+const Offices = () => {
+    return (
+        <div className="bg-white py-20 sm:pt-32">
+            <div className="mx-auto w-full px-6 lg:px-0">
+                <div className="mx-auto max-w-2xl lg:mx-0">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                        Our offices
+                    </h2>
+                </div>
+
+                <div className="border-l border-blue-600 mt-10 px-6">
+                    <h3 className=" font-semibold text-gray-900 mb-3">
+                        Telephone
+                    </h3>
+                    <a href="tel:+232 (76) 603-093" className=" text-blue-600 hover:text-blue-500">
+                        +232 (76) 603-093
+                    </a>
+                </div>
+                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <div>
+                        <h3 className="border-l border-blue-600 pl-6 font-semibold text-gray-900">
+                            Head Office
+                        </h3>
+                        <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
+
+
+                            <a href="mailto:hello@example.com" className=" text-blue-600 hover:text-blue-500">
+                                info@betonvilla-sl.com
+                            </a>
+                            <p>Villa 22, OAU Village, Hill Station</p>
+                            <p>Freetown, Sierra Leone</p>
+                        </address>
+                    </div>
+                    <div>
+                        <h3 className="border-l border-blue-600 pl-6 font-semibold text-gray-900">
+                            Waterloo Branch
+                        </h3>
+                        <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
+
+                            <a href="mailto:hello@example.com" className=" text-blue-600 hover:text-blue-500">
+                                gentair2000@yahoo.com
+                            </a>
+                            <p>Frey Street, Waterloo High Way</p>
+                            <p>Waterloo, Sierra Leone</p>
+                        </address>
+                    </div>
+                    <div>
+                        <h3 className="border-l border-blue-600 pl-6 font-semibold text-gray-900">
+                            Quarry
+                        </h3>
+                        <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
+                            <a href="mailto:hello@example.com" className=" text-blue-600 hover:text-blue-500">
+                                mgento@betonvilla-sl.com
+                            </a>
+                            <p>Freetown Peninsular Rd, Tombo</p>
+                            <p>Waterloo, Sierra Leone</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default function ContactUs() {
@@ -120,21 +180,15 @@ export default function ContactUs() {
                         <div className="mt-14">
                             <button
                                 type="submit"
-                                className="block w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="block w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                             >
                                 Let’s talk
                             </button>
                         </div>
-                        <p className="mt-4 text-sm leading-6 text-gray-500">
-                            By submitting this form, I agree to the{' '}
-                            <a href="#" className="font-semibold text-indigo-600">
-                                privacy&nbsp;policy
-                            </a>
-                            .
-                        </p>
+
                     </form>
                     <div className="lg:mt-6 lg:w-80 lg:flex-none">
-                        <img alt="" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" className="h-12 w-auto" />
+                        <img alt="" src="https://tailwindui.com/img/logos/workcation-logo-blue-600.svg" className="h-12 w-auto" />
                         <figure className="mt-10">
                             <blockquote className="text-lg font-semibold leading-8 text-gray-900">
                                 <p>
@@ -148,6 +202,7 @@ export default function ContactUs() {
                         </figure>
                     </div>
                 </div>
+                <Offices />
             </div>
         </div>
     );
