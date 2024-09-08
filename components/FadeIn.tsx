@@ -48,3 +48,28 @@ export function FadeInStagger({
         </FadeInStaggerContext.Provider>
     )
 }
+
+export function FadeHorrizontal(
+    props: React.ComponentPropsWithoutRef<typeof motion.div>,
+) {
+    let shouldReduceMotion = useReducedMotion()
+    let isInStaggerGroup = useContext(FadeInStaggerContext)
+
+    return (
+        <motion.div
+            variants={{
+                hidden: { opacity: 0, x: shouldReduceMotion ? 0 : 98 },
+                visible: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.5 }}
+            {...(isInStaggerGroup
+                ? {}
+                : {
+                    initial: 'hidden',
+                    whileInView: 'visible',
+                    viewport,
+                })}
+            {...props}
+        />
+    )
+}

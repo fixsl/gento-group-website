@@ -29,7 +29,7 @@ const services = [
 
 const ProjectsSection = () => {
     return (
-        <Container className="bg-white py-24 sm:py-32">
+        <Container className="bg-gray-100 py-24 sm:py-32">
             <FadeIn className="mx-auto max-w-7xl px-6 lg:px-0">
                 <div className="mx-auto max-w-2xl text-center  text-gray-900">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Projects</h2>
