@@ -72,7 +72,7 @@ const Offices = () => {
 
 export default function ContactUs() {
     return (
-        <div className="relative isolate bg-white px-6 py-24 sm:py-36 lg:px-8">
+        <div id='contact' className="relative isolate bg-white px-6 py-24 sm:py-36 lg:px-8">
             <svg
                 aria-hidden="true"
                 className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
