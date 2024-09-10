@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import { FadeIn } from "@/components/FadeIn";
 import quarryImage from "@/public/images/quarry.jpg"
@@ -10,7 +10,45 @@ export const metadata: Metadata = {
         'Gento Group of Companies.SL.Ltd aims to be the preferred contractor of choice, ensuring that the customers’ needs are always met with the utmost satisfaction'
 }
 
+const projects: Project[] = [
+    {
+        image: { alt: 'gento-projects-image', src: quarryImage },
+        year: '2015 - 2021',
+        title: 'Design and Construction of City and Provincial Township Roads',
+        description:
+            `Construction of New Prince Alfred Bridge 45.0m Long
+            •	Construction of New Kossoh Town Bridge 11.0m Long
+            •	Construction of single and double box culvert along the carriage way
+            •	Construction of single and double pipe culvert.
+            •	Construction of various sizes of surface drainages and chambers
+            •	Rehabilitation of 32.0Km of single carriageway at diﬀerent locations within the Waterloo Township, To mbo and Hastings Metropolis in Asphalt Concrete.
+            •	Construction of ducts for Utilities Services (Water, Electricity and Telephone lines`
+    },
+    {
+        image: { alt: 'gento-projects-image', src: quarryImage },
+        year: '2014 - 2020',
+        title: 'Designed and Reconstruction of King Jimmy Embankment, Drainage Works and Addendum',
+        description:
+            `Reconstruction of King J i m m y B r i d g e Embankment
+            •	Rehabilitation of 7.8Km of single carriageway at diﬀerent locations within the Freetown Metropolis
+            •	Construction of single and double box culvert along the carriage way
+            •	Construction of single and double pipe culvert.
+            •	Construction of various sizes of surface drainage and chambers
+            •	Construction of ducts for Utilities Services (Water, Electricity and Telephone lines)`
+    },
+]
 
+type Image = {
+    src: StaticImageData,
+    alt: string
+}
+
+type Project = {
+    image: Image,
+    year: string,
+    title: string,
+    description: string
+}
 
 function Header() {
     return (
@@ -63,37 +101,41 @@ function Header() {
     )
 }
 
-
-const values = [
-    {
-        name: 'Safety',
-        description:
-            'We recognise the prime importance of ensuring a safe, accident free and healthy workplace for all our employees, contractors, and visitors',
-    },
-    {
-        name: 'Innovative Solutions',
-        description:
-            'In applying resourcefulness, novelty and flexibility, we ensure to meet our clients requirements and expectations.',
-    },
-    {
-        name: 'Empowering People',
-        description:
-            'By creating a workplace of shared responsibility, our employees are recognised for their professionalism, initiative teamwork, promptness and we aim to create a gender balance workplace.',
-    },
-    {
-        name: 'Sustainability',
-        description:
-            'By undertaking all our civil projects in a manner that guarantee the protection of the natural environment and historic heritage we demonstrate our commitment to being a moral and environmentally cognisant civil engineering contractor',
-    },
-
-
-    {
-        name: 'Quality',
-        description:
-            'Our core values are inherent on providing the technical expertise to deliver excellence in road, Bridge and pavement engineering, and their related civil works. We believe that our commitment to providing good quality work from the beginning to end of a project is the key to our success. All our material undergoes necessary laboratory tests to assure quality according to contract specifications',
-    },
-
-]
+const ProjectSection = () => {
+    return (
+        <FadeIn>
+            <div >
+                {projects.map((project, index: number) => {
+                    return (
+                        <div
+                            key={`${project.title}-${index}`}
+                            className={`flex  gap-20 py-16 px-10 ${index % 2 !== 0 ? 'flex-row-reverse bg-gray-100' : ''}`}
+                        >
+                            <div className="relative h-72 w-1/2">
+                                <Image
+                                    src={project.image.src}
+                                    alt={project.image.alt}
+                                    fill
+                                />
+                            </div>
+                            <div className="pt-24 w-1/2">
+                                <h3 className="text-gray-600">
+                                    {project.year}
+                                </h3>
+                                <h4 className="text-gray-900 text-2xl py-4">
+                                    {project.title}
+                                </h4>
+                                <p className="text-gray-700">
+                                    {project.description}
+                                </p>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
+        </FadeIn>
+    )
+}
 
 const Projects = () => {
     return (
@@ -125,6 +167,7 @@ const Projects = () => {
             <FadeIn>
                 <Header />
             </FadeIn>
+            <ProjectSection />
 
         </div>
     );
