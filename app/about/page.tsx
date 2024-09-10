@@ -1,3 +1,4 @@
+import { FadeIn } from "@/components/FadeIn";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -65,51 +66,57 @@ const AboutUs = () => {
                 </svg>
                 <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
             </svg>
-            <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-                <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Our mission
-                    </h2>
-                    <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-                        <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                            <p className="text-xl leading-8 text-gray-600">
-                                We intend to grow our business and be recognised as a leading Sierra Leonean civil contractor by demonstrating
-                                the highest degree of quality, value, cost effective services and integrity to our
-                                clients and stakeholders. Moreover, our primary goal is to operate in an ethical and environmentally friendly manner, while being responsible to the communities in which we work
-                            </p>
+            <FadeIn>
+
+                <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+                    <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            Our mission
+                        </h2>
+                        <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+                            <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
+                                <p className="text-xl leading-8 text-gray-600">
+                                    We intend to grow our business and be recognised as a leading Sierra Leonean civil contractor by demonstrating
+                                    the highest degree of quality, value, cost effective services and integrity to our
+                                    clients and stakeholders. Moreover, our primary goal is to operate in an ethical and environmentally friendly manner, while being responsible to the communities in which we work
+                                </p>
+
+                            </div>
 
                         </div>
-
                     </div>
                 </div>
-            </div>
-            {/* Image section */}
-            <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-                <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-                    className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
-                />
-            </div>
-
-            {/* Values section */}
-            <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our values</h2>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Consequently, our company is built on the following values:
-                    </p>
+            </FadeIn>
+            <FadeIn>
+                {/* Image section */}
+                <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+                    <img
+                        alt=""
+                        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+                        className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+                    />
                 </div>
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    {values.map((value) => (
-                        <div key={value.name}>
-                            <dt className="font-semibold text-gray-900">{value.name}</dt>
-                            <dd className="mt-1 text-gray-600">{value.description}</dd>
-                        </div>
-                    ))}
-                </dl>
-            </div>
+            </FadeIn>
 
+            <FadeIn>
+                {/* Values section */}
+                <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+                    <div className="mx-auto max-w-2xl lg:mx-0">
+                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our values</h2>
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            Consequently, our company is built on the following values:
+                        </p>
+                    </div>
+                    <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        {values.map((value) => (
+                            <div key={value.name}>
+                                <dt className="font-semibold text-gray-900">{value.name}</dt>
+                                <dd className="mt-1 text-gray-600">{value.description}</dd>
+                            </div>
+                        ))}
+                    </dl>
+                </div>
+            </FadeIn>
         </div>
     );
 }
