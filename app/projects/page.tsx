@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 
 import { FadeIn } from "@/components/FadeIn";
 import quarryImage from "@/public/images/quarry.jpg"
+import hillCutImage from "@/public/images/hillcut-road.jpg"
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -26,6 +27,16 @@ const projects: Project[] = [
     },
     {
         image: { alt: 'gento-projects-image', src: quarryImage },
+        year: '2019 - 2020',
+        title: 'Design and Construction of Internal Roads at 34 Military Hospital',
+        description:
+            `Rehabilitation of 1.30m of single carriageway at 34 Military Hospital, Wilberforce    Barracks in Asphalt Concrete.
+            •   Construction of single and double pipe culvert.
+            •    Construction of various sizes of surface drainages and chambers
+            •   Construction of ducts for Utilities Services (Water, Electricity and Telephone lines`
+    },
+    {
+        image: { alt: 'gento-projects-image', src: quarryImage },
         year: '2014 - 2020',
         title: 'Designed and Reconstruction of King Jimmy Embankment, Drainage Works and Addendum',
         description:
@@ -35,6 +46,70 @@ const projects: Project[] = [
             •	Construction of single and double pipe culvert.
             •	Construction of various sizes of surface drainage and chambers
             •	Construction of ducts for Utilities Services (Water, Electricity and Telephone lines)`
+    },
+    {
+        image: { alt: 'gento-projects-image', src: hillCutImage },
+        year: '2013 - 2020',
+        title: 'Freetown Ring Roads',
+        description:
+            `•	Construction of dual carriageway 6.2Km in Asphalt Concrete
+            •	Construction of Hill Cot Road in two diﬀerent levels
+            •	Construction of New Hill Cot Flyover Bridge 26.0m Long
+            •	Reconstruction of Old Hill Cot Bridge 15.0m Long
+            •	Construction of Foot Bridge 36.0m Long at Jomo Kenyatta a Road
+            •	Construction of double box culvert at George Brook 36.00m wide x 10.00m Long
+            •	Construction of single and double box culvert along the carriage way
+            •	Construction of single and double pipe culvert.
+            •	Construction of various sizes of surface drainages and chambers
+            •	Construction of ducts for Utilities Services (Water, Electricity and Telephone lines)
+            •	Two junctions solar traﬃc light at king Harman Road`
+    },
+    {
+        image: { alt: 'gento-projects-image', src: hillCutImage },
+        year: '2018 - 2019',
+        title: 'Study and Proposal of New Commercial Harbour at Kent',
+        description:
+            `•	Underwater studies
+            •	Bathymetry studies in diﬀerential water levels
+            •	Reclamation of Sea Face
+            •	Dredging of Sea Bed
+            •	D e s i g n o f	t h e Commercial Harbour`
+    },
+    {
+        image: { alt: 'gento-projects-image', src: hillCutImage },
+        year: '2015 - 2016',
+        title: 'Design and Construction of Internal Roads at Police Training School',
+        description:
+            `•  Rehabilitation of 3.0Km of single carriageway at Has tings in Asphalt Concrete.
+            •  Construction of single and double pipe culvert.
+            •  Construction of various sizes of surface drainages a n d c h a m b e r s Construction of      ducts for Utilities Services (Water, Electricity and Telephone lines)
+            `
+    },
+    {
+        image: { alt: 'gento-projects-image', src: hillCutImage },
+        year: '2015 - 2016',
+        title: 'Rehabilitation of Bathurst Estate for Gento Villa',
+        description:
+            `•	Access Road Construction
+            •	Construction of Ground tank
+            •	Rehabilitation of all buildings within the complex
+            •	Construction of 6.0m high Retaining Walls and Perimeter Fence
+            •	Paved Parking Area            
+            `
+    },
+    {
+        image: { alt: 'gento-projects-image', src: hillCutImage },
+        year: '2014',
+        title: 'Construction of Internal Roads at Kerry Town, Ebola Treatment Center',
+        description:
+            `•	Construction of Concrete Pavement Internal Roads 2.0Km Long
+            •	Construction of 650.0m Storm Drain
+            •	Construction of surface drainages and chambers within the compound
+            •	Construction of paved parking areas
+            •	Internal Landscaping
+            •	Construction Car for Wards
+            •	Construction of various types of Pipe Culverts                    
+            `
     },
 ]
 
@@ -109,7 +184,7 @@ const ProjectSection = () => {
                     return (
                         <div
                             key={`${project.title}-${index}`}
-                            className={`flex  gap-20 py-16 px-10 ${index % 2 !== 0 ? 'flex-row-reverse bg-gray-100' : ''}`}
+                            className={`flex  gap-20 py-16 px-10 ${index % 2 !== 0 ? 'flex-row-reverse bg-gray-50' : ''}`}
                         >
                             <div className="relative h-72 w-1/2">
                                 <Image
@@ -139,7 +214,7 @@ const ProjectSection = () => {
 
 const Projects = () => {
     return (
-        <div className="relative isolate bg-white px-6 py-24 sm:pb-36 sm:pt-20 lg:px-8">
+        <div className="relative isolate bg-white px-6 pt-24 sm:pt-20 lg:px-8">
             <svg
                 aria-hidden="true"
                 className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
