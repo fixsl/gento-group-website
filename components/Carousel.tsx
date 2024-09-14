@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import hillCutRoadImage from '@/public/images/hillcut-road.jpg';
 import kinghamman from '@/public/images/king-hamman-road.jpg';
+import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 
 const images = [
     { id: 1, url: hillCutRoadImage, alt: 'Image 1' },
@@ -36,7 +37,7 @@ const Carousel: React.FC = () => {
                     <div key={image.id} className="w-[50%] flex-shrink-0 px-5">
                         <div className="relative h-64">
 
-                            <div className="relative w-[320px] h-60">
+                            <div className="relative w-[320px] h-64">
                                 <Image
                                     src={image.url}
                                     alt={image.alt}
@@ -44,7 +45,7 @@ const Carousel: React.FC = () => {
                                 />
                             </div>
                             {/* Overlayed card */}
-                            <div className="absolute flex flex-col justify-between h-56 top-2 -translate-x-[2rem] left-1/2 z-10 bg-white px-8 pt-5 pb-8 shadow-lg text-gray-800 rounded-md w-[320px]">
+                            <div className="absolute flex flex-col justify-between h-60 top-2 -translate-x-[2rem] left-1/2 z-10 bg-white px-8 pt-5 pb-8 shadow-lg text-gray-800 rounded-md w-[320px]">
                                 <div>
                                     <h2 className="text-xl font-bold mb-4">{image.alt}</h2>
                                     <p>This is an example of a card overlapping an image on the x-axis.</p>
@@ -67,17 +68,19 @@ const Carousel: React.FC = () => {
             {currentIndex > 0 && (
                 <button
                     onClick={handlePrev}
-                    className="absolute left-0 p-2 text-white bg-gray-600 rounded-full top-1/2 transform -translate-y-1/2 z-30"
+                    className="absolute left-5 p-2 bg-white text-gray-900 rounded-lg top-1/2 transform -translate-y-1/2 z-30"
                 >
-                    Prev
+                    <span className="sr-only">Prev Slide</span>
+                    <ArrowLeftCircleIcon aria-hidden="true" className="h-8 w-8" />
                 </button>
             )}
             {currentIndex < images.length - 2 && (
                 <button
                     onClick={handleNext}
-                    className="absolute right-0 p-2 text-white bg-gray-600 rounded-full top-1/2 transform -translate-y-1/2 z-30"
+                    className="absolute right-5 p-2 text-gray-900 bg-white rounded-lg top-1/2 transform -translate-y-1/2 z-30"
                 >
-                    Next
+                    <span className="sr-only">Next Slide</span>
+                    <ArrowRightCircleIcon aria-hidden="true" className="h-8 w-8" />
                 </button>
             )}
         </div>
