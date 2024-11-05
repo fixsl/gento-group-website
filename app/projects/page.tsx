@@ -11,6 +11,18 @@ export const metadata: Metadata = {
         'Gento Group of Companies.SL.Ltd aims to be the preferred contractor of choice, ensuring that the customers’ needs are always met with the utmost satisfaction'
 }
 
+export type ImageProps = {
+    src: StaticImageData,
+    alt: string
+}
+
+type Project = {
+    image: ImageProps,
+    year: string,
+    title: string,
+    description: string
+}
+
 const projects: Project[] = [
     {
         image: { alt: 'gento-projects-image', src: quarryImage },
@@ -113,17 +125,6 @@ const projects: Project[] = [
     },
 ]
 
-type Image = {
-    src: StaticImageData,
-    alt: string
-}
-
-type Project = {
-    image: Image,
-    year: string,
-    title: string,
-    description: string
-}
 
 function Header() {
     return (

@@ -1,6 +1,9 @@
 import { FadeIn } from "@/components/FadeIn";
 import { Metadata } from "next";
 
+import ourTrucks from '@/public/images/our-trucks.jpg';
+import Image from "next/image";
+
 export const metadata: Metadata = {
     title: 'About Us',
     description:
@@ -88,19 +91,17 @@ const AboutUs = () => {
                 </div>
             </FadeIn>
             <FadeIn>
-                {/* Image section */}
-                <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-                    <img
-                        alt=""
-                        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+                <div className="mt-32 sm:mt-24 xl:mx-auto xl:max-w-7xl xl:px-8">
+                    <Image
+                        src={ourTrucks}
+                        alt={'trucks-image'}
                         className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
                     />
                 </div>
             </FadeIn>
-
             <FadeIn>
                 {/* Values section */}
-                <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+                <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-24 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our values</h2>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
