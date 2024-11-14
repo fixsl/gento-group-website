@@ -45,12 +45,62 @@ const services: Service[] = [
     {
         title: 'Crushing of Aggregate',
         image: { src: kinghamman, alt: 'service image' },
-        descriptionList: ['Features of the relief and coastline']
+        descriptionList: [
+            'For Concrete',
+            'Road stone',
+            'Gabion Stone',
+        ]
     },
     {
         title: 'Concrete Work',
         image: { src: kinghamman, alt: 'service image' },
-        descriptionList: ['Features of the relief and coastline']
+        descriptionList: [
+            'Bridges',
+            'Pump Stations',
+            'Retaining Walls',
+        ]
+    },
+    {
+        title: 'Transportation',
+        image: { src: kinghamman, alt: 'service image' },
+        descriptionList: [
+            'Road construction (rehabilitation and maintenance)',
+            'Concrete Roads (Repairing damaged road, Tar roads, etc)'
+        ]
+    },
+    {
+        title: 'Airports Construction',
+        image: { src: kinghamman, alt: 'service image' },
+        descriptionList: [
+            'Upgrading Layer works Prism',
+            '	Surfacing Runaway',
+            '	Airﬁeld Lighting, etc',
+        ]
+    },
+    {
+        title: 'Real Estate Developement',
+        image: { src: kinghamman, alt: 'service image' },
+        descriptionList: [
+            'Creation and development of private residential estate',
+            'Manufacturing and Supply of blocks and concrete rings etc'
+        ]
+    },
+    {
+        title: 'Infrastructure Projects',
+        image: { src: kinghamman, alt: 'service image' },
+        descriptionList: [
+            'Storm Water Drainage',
+            '	Sewer Reticulation',
+            '	Water Reticulation',
+        ]
+    },
+    {
+        title: 'Geotechnical Engineering',
+        image: { src: kinghamman, alt: 'service image' },
+        descriptionList: [
+            '	Environmental Impact Assessments',
+            '	Site and Laboratory Material Testing',
+        ]
     },
 ]
 
