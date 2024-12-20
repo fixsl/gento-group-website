@@ -1,9 +1,20 @@
-import Image from "next/image";
+import { Metadata } from "next";
+
+import HeroSection from "@/components/HeroSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ServicesSection from "@/components/ServicesSection";
+
+export const metadata: Metadata = {
+  description:
+    'Welcome to Gento Group of Companies.SL.Ltd, your premier partner in Building and Major Civil Construction. With a steadfast commitment to excellence, we pave the way for enhanced connectivity and seamless travel experiences',
+}
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Home Page</h1>
-    </main>
+    <div>
+      <HeroSection />
+      <ServicesSection />
+      <ProjectsSection />
+    </div>
   );
 }
