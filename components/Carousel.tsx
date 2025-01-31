@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from '@heroicons/react/24/outline';
+
 import hillCutRoadImage from '@/public/images/hillcut-road.jpg';
 import kinghamman from '@/public/images/king-hamman-road.jpg';
 import stMarys from '@/public/images/stmarys-round-about.jpg';
 import seaPort from '@/public/images/sea-port.jpeg';
 import roadJunction from '@/public/images/road-unction.jpeg';
-import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from '@heroicons/react/24/outline';
+import gentoQuarry from '@/public/images/quarry.jpg';
+import transport from '@/public/images/our-trucks.jpg';
+import geoTech from '@/public/images/geo-tech.jpg';
+import infas from '@/public/images/infas.jpeg';
+import estate from '@/public/images/estate.jpg';
 import { ImageProps } from '@/app/projects/page';
-import Image from 'next/image';
 
 type Service = {
     title: string,
@@ -44,7 +50,7 @@ const services: Service[] = [
     },
     {
         title: 'Crushing of Aggregate',
-        image: { src: kinghamman, alt: 'service image' },
+        image: { src: gentoQuarry, alt: 'service image' },
         descriptionList: [
             'For Concrete',
             'Road stone',
@@ -53,7 +59,7 @@ const services: Service[] = [
     },
     {
         title: 'Concrete Work',
-        image: { src: kinghamman, alt: 'service image' },
+        image: { src: hillCutRoadImage, alt: 'service image' },
         descriptionList: [
             'Bridges',
             'Pump Stations',
@@ -62,7 +68,7 @@ const services: Service[] = [
     },
     {
         title: 'Transportation',
-        image: { src: kinghamman, alt: 'service image' },
+        image: { src: transport, alt: 'service image' },
         descriptionList: [
             'Road construction (rehabilitation and maintenance)',
             'Concrete Roads (Repairing damaged road, Tar roads, etc)'
@@ -79,7 +85,7 @@ const services: Service[] = [
     },
     {
         title: 'Real Estate Developement',
-        image: { src: kinghamman, alt: 'service image' },
+        image: { src: estate, alt: 'service image' },
         descriptionList: [
             'Creation and development of private residential estate',
             'Manufacturing and Supply of blocks and concrete rings etc'
@@ -87,7 +93,7 @@ const services: Service[] = [
     },
     {
         title: 'Infrastructure Projects',
-        image: { src: kinghamman, alt: 'service image' },
+        image: { src: infas, alt: 'service image' },
         descriptionList: [
             'Storm Water Drainage',
             '	Sewer Reticulation',
@@ -96,7 +102,7 @@ const services: Service[] = [
     },
     {
         title: 'Geotechnical Engineering',
-        image: { src: kinghamman, alt: 'service image' },
+        image: { src: geoTech, alt: 'service image' },
         descriptionList: [
             '	Environmental Impact Assessments',
             '	Site and Laboratory Material Testing',
