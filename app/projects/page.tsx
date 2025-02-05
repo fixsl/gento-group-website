@@ -4,6 +4,12 @@ import Image, { StaticImageData } from "next/image";
 import { FadeIn } from "@/components/FadeIn";
 import quarryImage from "@/public/images/quarry.jpg"
 import hillCutImage from "@/public/images/hillcut-road.jpg"
+import KerryTown from "@/public/images/Kerry.jpg"
+import Bathurst from "@/public/images/bathurst.jpg"
+import Police from "@/public/images/police.jpg"
+import Brookfields from "@/public/images/Brookfields.jpg"
+import lodge from "@/public/images/lodge.jpeg"
+import internal from "@/public/images/Country Lodge Intersection.jpeg"
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -25,7 +31,7 @@ type Project = {
 
 const projects: Project[] = [
     {
-        image: { alt: 'gento-projects-image', src: quarryImage },
+        image: { alt: 'gento-projects-image', src: Bathurst },
         year: '2015 - 2021',
         title: 'Design and Construction of City and Provincial Township Roads',
         description:
@@ -38,7 +44,7 @@ const projects: Project[] = [
             •	Construction of ducts for Utilities Services (Water, Electricity and Telephone lines`
     },
     {
-        image: { alt: 'gento-projects-image', src: quarryImage },
+        image: { alt: 'gento-projects-image', src: internal },
         year: '2019 - 2020',
         title: 'Design and Construction of Internal Roads at 34 Military Hospital',
         description:
@@ -48,7 +54,7 @@ const projects: Project[] = [
             •   Construction of ducts for Utilities Services (Water, Electricity and Telephone lines`
     },
     {
-        image: { alt: 'gento-projects-image', src: quarryImage },
+        image: { alt: 'gento-projects-image', src: lodge },
         year: '2014 - 2020',
         title: 'Designed and Reconstruction of King Jimmy Embankment, Drainage Works and Addendum',
         description:
@@ -77,7 +83,7 @@ const projects: Project[] = [
             •	Two junctions solar traﬃc light at king Harman Road`
     },
     {
-        image: { alt: 'gento-projects-image', src: hillCutImage },
+        image: { alt: 'gento-projects-image', src: quarryImage },
         year: '2018 - 2019',
         title: 'Study and Proposal of New Commercial Harbour at Kent',
         description:
@@ -88,7 +94,7 @@ const projects: Project[] = [
             •	D e s i g n o f	t h e Commercial Harbour`
     },
     {
-        image: { alt: 'gento-projects-image', src: hillCutImage },
+        image: { alt: 'gento-projects-image', src: Police },
         year: '2015 - 2016',
         title: 'Design and Construction of Internal Roads at Police Training School',
         description:
@@ -98,7 +104,7 @@ const projects: Project[] = [
             `
     },
     {
-        image: { alt: 'gento-projects-image', src: hillCutImage },
+        image: { alt: 'gento-projects-image', src: Brookfields },
         year: '2015 - 2016',
         title: 'Rehabilitation of Bathurst Estate for Gento Villa',
         description:
@@ -110,7 +116,7 @@ const projects: Project[] = [
             `
     },
     {
-        image: { alt: 'gento-projects-image', src: hillCutImage },
+        image: { alt: 'gento-projects-image', src: KerryTown },
         year: '2014',
         title: 'Construction of Internal Roads at Kerry Town, Ebola Treatment Center',
         description:
