@@ -23,8 +23,8 @@ const Header = () => {
 
     return (
         <header className="absolute inset-x-0 top-0 z-50">
-            <div className="mx-auto max-w-7xl flex">
-                <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
+            <div className="mx-auto w-full md:max-w-7xl flex">
+                <div className="px-6 pt-6 w-full lg:max-w-2xl lg:pl-8 lg:pr-0">
                     <nav aria-label="Global" className="flex items-center justify-between lg:justify-start">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -97,10 +97,10 @@ const Header = () => {
                             </div>
                             <div className="py-6">
                                 <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    href="/contact"
+                                    className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                                 >
-                                    Log in
+                                    Contact Us
                                 </a>
                             </div>
                         </div>
