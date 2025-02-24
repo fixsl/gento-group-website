@@ -17,7 +17,7 @@ const HeroSection = () => {
                         <polygon points="0,0 90,0 50,100 0,100" />
                     </svg>
 
-                    <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-48 lg:pr-0">
+                    <div className="relative px-6 py-16 sm:py-40 lg:px-8 lg:py-48 lg:pr-0">
                         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                             <h1 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-5xl">
                                 Your premier partner in building and major civil construction
@@ -39,7 +39,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <FadeIn className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <FadeIn className="bg-gray-50 mb-20 md:mb-0 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <Image
                     alt="hillcutt-road-roundabout"
                     src={hillCutRoadImage}
