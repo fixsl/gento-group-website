@@ -39,7 +39,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <FadeIn className="bg-gray-50 mb-20 md:mb-0 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <FadeIn className="bg-gray-50 mb-16 md:mb-0 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <Image
                     alt="hillcutt-road-roundabout"
                     src={hillCutRoadImage}
