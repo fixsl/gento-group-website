@@ -56,7 +56,7 @@ const Header = () => {
 
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end px-6 pt-6 lg:pl-0 lg:pr-8">
                         <a href="/contact#contact" className="text-sm font-semibold leading-6 text-blue-900">
-                            Get Started <span aria-hidden="true">&rarr;</span>
+                            Contact Us <span aria-hidden="true">&rarr;</span>
                         </a>
                     </div>
                 )}
