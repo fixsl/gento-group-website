@@ -8,7 +8,7 @@ import { FadeIn } from "@/components/FadeIn";
 export const metadata: Metadata = {
     title: 'Quarry',
     description:
-        'Interested in exploring our projects or contemplating Gento Group of Companies.SL.Ltd for your upcoming venture?'
+        'Gento Group Quarry is a key supplier of high-quality construction aggregates in Sierra Leone'
 }
 
 function ImageLayout() {
@@ -49,7 +49,7 @@ function ImageLayout() {
 const QuarryText = () => {
     return (
         <FadeIn>
-            <div className="pt-6 xl:px-5">
+            <div className="pt-10 xl:px-5">
                 <div className="">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Gento Quarry
