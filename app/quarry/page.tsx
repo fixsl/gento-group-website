@@ -46,6 +46,33 @@ function ImageLayout() {
     );
 }
 
+const QuarryText = () => {
+    return (
+        <FadeIn>
+            <div className="pt-6 xl:px-5">
+                <div className="">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Gento Quarry
+                    </h2>
+                    <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+                        <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
+                            <p className="text-xl leading-8 text-gray-600">
+                                Located at a strategic site, the Gento Group Quarry is a key supplier of high-quality construction aggregates in Sierra Leone.
+                                The quarry produces a wide range of aggregate sizes suitable for various applications including road construction,
+                                building works, and other infrastructure projects. Its primary output includes crushed stone of different grades,
+                                tailored to meet the demands of modern construction standards.
+                                The quarry primarily serves the needs of Gento Group projects as well as third-party construction initiatives across Sierra Leone.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </FadeIn>
+    )
+}
+
 
 export default function Quarry() {
     return (
@@ -77,6 +104,7 @@ export default function Quarry() {
             <FadeIn>
                 <ImageLayout />
             </FadeIn>
+            <QuarryText />
         </div>
     );
 }
