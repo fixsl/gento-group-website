@@ -13,7 +13,7 @@ import transport from '@/public/images/our-trucks.jpg';
 import geoTech from '@/public/images/geo-tech.jpg';
 import infas from '@/public/images/infas.jpeg';
 import estate from '@/public/images/estate.jpg';
-import { ImageProps } from '@/app/projects/page';
+import { ImageProps } from '@/app/construction/page';
 
 type Service = {
     title: string,

@@ -1,16 +1,14 @@
 "use client"
 
-import {
-    useState,
-} from 'react'
-
+import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { usePathname } from 'next/navigation'
+import clsx from 'clsx'
 
 const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
+    { name: 'Construction', href: '/construction' },
     { name: 'Quarry', href: '/quarry' },
     { name: 'Services', href: '/#services' },
     { name: 'About Us', href: '/about' },
@@ -22,10 +20,11 @@ const Header = () => {
     const pathName = usePathname()
 
 
+
     return (
         <header className="absolute inset-x-0 top-0 z-50">
             <div className="mx-auto w-full flex">
-                <div className="px-6 pt-6 w-full lg:max-w-2xl xl:max-w-3xl lg:pl-8 lg:pr-0 xl:pl-12 xl:pr-12">
+                <div className="px-6 pt-6 w-full lg:max-w-2xl xl:max-w-4xl lg:pl-8 lg:pr-0 xl:pl-12 xl:pr-12">
                     <nav aria-label="Global" className="flex items-center justify-between lg:justify-start">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -45,7 +44,12 @@ const Header = () => {
                         </button>
                         <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
                             {navigation.map((item) => (
-                                <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                                <a
+                                    key={item.name}
+                                    href={item.href}
+                                    className={clsx("text-sm font-semibold leading-6 ",
+                                        item.href === pathName ? 'text-blue-600' : 'text-gray-900')}
+                                >
                                     {item.name}
                                 </a>
                             ))}
@@ -90,7 +94,9 @@ const Header = () => {
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        className={clsx("-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 ",
+                                            item.href === pathName ? 'text-blue-600 hover:bg-blue-50' : 'text-gray-900 hover:bg-gray-50'
+                                        )}
                                     >
                                         {item.name}
                                     </a>
