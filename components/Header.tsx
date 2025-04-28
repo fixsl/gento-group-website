@@ -11,6 +11,7 @@ import { usePathname } from 'next/navigation'
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Projects', href: '/projects' },
+    { name: 'Quarry', href: '/quarry' },
     { name: 'Services', href: '/#services' },
     { name: 'About Us', href: '/about' },
 ]
@@ -23,8 +24,8 @@ const Header = () => {
 
     return (
         <header className="absolute inset-x-0 top-0 z-50">
-            <div className="mx-auto w-full md:max-w-7xl flex">
-                <div className="px-6 pt-6 w-full lg:max-w-2xl lg:pl-8 lg:pr-0">
+            <div className="mx-auto w-full flex">
+                <div className="px-6 pt-6 w-full lg:max-w-2xl xl:max-w-3xl lg:pl-8 lg:pr-0 xl:pl-12 xl:pr-12">
                     <nav aria-label="Global" className="flex items-center justify-between lg:justify-start">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -54,7 +55,7 @@ const Header = () => {
                 </div>
                 {pathName !== '/' && (
 
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end px-6 pt-6 lg:pl-0 lg:pr-8">
+                    <div className="hidden lg:flex lg:flex-1 lg:justify-end px-6 pt-6 lg:pl-0 lg:pr-8 xl:pl-12 xl:pr-12">
                         <a href="/contact#contact" className="text-sm font-semibold leading-6 text-blue-900">
                             Contact Us <span aria-hidden="true">&rarr;</span>
                         </a>
