@@ -31,3 +31,28 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* styles/globals.css or inside your component */
+
+.clip-left {
+  clip-path: polygon(
+    0 0, 
+    30% 0, 
+    30% 15%, 
+    100% 15%, 
+    100% 100%, 
+    0 100%
+  );
+}
+
+.clip-right {
+  clip-path: polygon(
+    0 0,       /* top left */
+    100% 0,    /* top right */
+    100% 100%, /* bottom right */
+    30% 100%,  /* notch starts */
+    30% 85%,   /* notch inset */
+    0 85%      /* bottom left */
+  );
+}
