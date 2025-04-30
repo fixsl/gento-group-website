@@ -1,10 +1,19 @@
+// import { ContactSection } from '@/components/ContactSection'
+// import { Container } from '@/components/Container'
+// import { FadeIn } from '@/components/FadeIn'
+// import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
+// import { MDXComponents } from '@/components/MDXComponents'
+// import { PageIntro } from '@/components/PageIntro'
+// import { PageLinks } from '@/components/PageLinks'
+import { ContactSection } from '@/src/components/ContactSection'
 import { Container } from '@/src/components/Container'
 import { FadeIn } from '@/src/components/FadeIn'
-// import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
+import { GrayscaleTransitionImage } from '@/src/components/GrayscaleTransitionImage'
 import { MDXComponents } from '@/src/components/MDXComponents'
 import { PageIntro } from '@/src/components/PageIntro'
 import { PageLinks } from '@/src/components/PageLinks'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/src/lib/mdx'
+import { useEffect } from 'react'
 
 export default async function CaseStudyLayout({
     caseStudy,
@@ -26,7 +35,7 @@ export default async function CaseStudyLayout({
                         <p>{caseStudy.description}</p>
                     </PageIntro>
 
-                    {/* <FadeIn>
+                    <FadeIn>
                         <div className="mt-24 border-t border-neutral-200 bg-white/50 sm:mt-32 lg:mt-40">
                             <Container>
                                 <div className="mx-auto max-w-5xl">
@@ -63,7 +72,7 @@ export default async function CaseStudyLayout({
                                 />
                             </div>
                         </div>
-                    </FadeIn> */}
+                    </FadeIn>
                 </header>
 
                 <Container className="mt-24 sm:mt-32 lg:mt-40">
@@ -72,15 +81,6 @@ export default async function CaseStudyLayout({
                     </FadeIn>
                 </Container>
             </article>
-
-            {moreCaseStudies.length > 0 && (
-                <PageLinks
-                    className="mt-24 sm:mt-32 lg:mt-40"
-                    title="More case studies"
-                    pages={moreCaseStudies}
-                />
-            )}
-
         </>
     )
 }

@@ -5,19 +5,9 @@ import Link from 'next/link'
 import { Blockquote } from '@/src/components/Blockquote'
 import { Border } from '@/src/components/Border'
 import { Button } from '@/src/components/Button'
-import { ContactSection } from '@/src/components/ContactSection'
 import { Container } from '@/src/components/Container'
-import { FadeIn, FadeInStagger } from '@/src/components/FadeIn'
+import { FadeIn } from '@/src/components/FadeIn'
 import { PageIntro } from '@/src/components/PageIntro'
-// import { Testimonial } from '@/components/Testimonial'
-// import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-// import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-// import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-// import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-// import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-// import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-// import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-// import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/src/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/src/lib/mdx'
 
@@ -96,46 +86,6 @@ function CaseStudies({
     )
 }
 
-// const clients = [
-//     ['Phobia', logoPhobia],
-//     ['Family Fund', logoFamilyFund],
-//     ['Unseal', logoUnseal],
-//     ['Mail Smirk', logoMailSmirk],
-//     ['Home Work', logoHomeWork],
-//     ['Green Life', logoGreenLife],
-//     ['Bright Path', logoBrightPath],
-//     ['North Adventures', logoNorthAdventures],
-// ]
-
-// function Clients() {
-//     return (
-//         <Container className="mt-24 sm:mt-32 lg:mt-40">
-//             <FadeIn>
-//                 <h2 className="font-display text-2xl font-semibold text-neutral-950">
-//                     You’re in good company
-//                 </h2>
-//             </FadeIn>
-//             <FadeInStagger className="mt-10" faster>
-//                 <Border as={FadeIn} />
-//                 <ul
-//                     role="list"
-//                     className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-//                 >
-//                     {clients.map(([client, logo]) => (
-//                         <li key={client} className="group">
-//                             <FadeIn className="overflow-hidden">
-//                                 <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
-//                                     <Image src={logo} alt={client} unoptimized />
-//                                 </Border>
-//                             </FadeIn>
-//                         </li>
-//                     ))}
-//                 </ul>
-//             </FadeInStagger>
-//         </Container>
-//     )
-// }
-
 export const metadata: Metadata = {
     title: 'Our Work',
     description:
@@ -148,29 +98,16 @@ export default async function Work() {
     return (
         <>
             <PageIntro
-                eyebrow="Our work"
+                eyebrow="Our Work"
                 title="Proven solutions for real-world problems."
             >
                 <p>
-                    We believe in efficiency and maximizing our resources to provide the
-                    best value to our clients. The primary way we do that is by re-using
-                    the same five projects we’ve been developing for the past decade.
+                    We aim to be the your contractor of choice, ensuring that the customers’ needs are met with the utmost satisfaction.
+                    We have been recognised as the contractor that “Delivers”
                 </p>
             </PageIntro>
 
             <CaseStudies caseStudies={caseStudies} />
-
-            {/* <Testimonial
-                className="mt-24 sm:mt-32 lg:mt-40"
-                client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
-            >
-                We approached <em>Studio</em> because we loved their past work. They
-                delivered something remarkably similar in record time.
-            </Testimonial>
-
-            <Clients />
-
-            <ContactSection /> */}
         </>
     )
 }
