@@ -1,5 +1,4 @@
 import { type Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { Blockquote } from '@/src/components/Blockquote'
@@ -8,7 +7,6 @@ import { Button } from '@/src/components/Button'
 import { Container } from '@/src/components/Container'
 import { FadeIn } from '@/src/components/FadeIn'
 import { PageIntro } from '@/src/components/PageIntro'
-import { formatDate } from '@/src/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/src/lib/mdx'
 
 function CaseStudies({
@@ -76,9 +74,9 @@ function CaseStudies({
 }
 
 export const metadata: Metadata = {
-    title: 'Our Work',
+    title: 'Our Construction Projects',
     description:
-        'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+        'We aim to be the your contractor of choice, ensuring that the customers’ needs are met with the utmost satisfaction.',
 }
 
 export default async function Work() {
@@ -87,7 +85,7 @@ export default async function Work() {
     return (
         <>
             <PageIntro
-                eyebrow="Our Work"
+                eyebrow="Our Construction Projects"
                 title="Proven solutions for real-world problems."
             >
                 <p>
