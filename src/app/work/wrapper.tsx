@@ -1,19 +1,9 @@
-// import { ContactSection } from '@/components/ContactSection'
-// import { Container } from '@/components/Container'
-// import { FadeIn } from '@/components/FadeIn'
-// import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
-// import { MDXComponents } from '@/components/MDXComponents'
-// import { PageIntro } from '@/components/PageIntro'
-// import { PageLinks } from '@/components/PageLinks'
-import { ContactSection } from '@/src/components/ContactSection'
 import { Container } from '@/src/components/Container'
 import { FadeIn } from '@/src/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/src/components/GrayscaleTransitionImage'
 import { MDXComponents } from '@/src/components/MDXComponents'
 import { PageIntro } from '@/src/components/PageIntro'
-import { PageLinks } from '@/src/components/PageLinks'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/src/lib/mdx'
-import { useEffect } from 'react'
 
 export default async function CaseStudyLayout({
     caseStudy,
