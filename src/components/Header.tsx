@@ -48,7 +48,9 @@ const Header = () => {
                                     key={item.name}
                                     href={item.href}
                                     className={clsx("text-sm font-semibold leading-6 ",
-                                        item.href === pathName ? 'text-blue-600' : 'text-gray-900')}
+
+                                        item.href === '/work' ? pathName.includes(item.href) ? 'text-blue-600' : 'text-gray-900' :
+                                            item.href === pathName ? 'text-blue-600' : 'text-gray-900')}
                                 >
                                     {item.name}
                                 </a>
