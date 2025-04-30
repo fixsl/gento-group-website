@@ -29,9 +29,9 @@ const services = [
 
 const ProjectsSection = () => {
     return (
-        <Container className="bg-gray-100 py-24 sm:py-32">
-            <FadeIn className="mx-auto max-w-7xl px-6 lg:px-0">
-                <div className="mx-auto max-w-2xl text-center  text-gray-900">
+        <div className="bg-gray-100 py-24 sm:py-32 w-full">
+            <FadeIn className="mx-auto w-full px-6 lg:px-0">
+                <div className="mx-auto w-full text-center  text-gray-900">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Projects</h2>
                     <p className="mt-4 text-lg leading-8 text-gray-800">
                         We are known as the contractor that “Delivers”
@@ -42,7 +42,7 @@ const ProjectsSection = () => {
                     </p>
                     <div className="mt-16">
                         <a
-                            href="/projects"
+                            href="/work"
                             className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                         >
                             See Collection
@@ -51,7 +51,7 @@ const ProjectsSection = () => {
                 </div>
 
             </FadeIn>
-        </Container>
+        </div>
     )
 }
 
