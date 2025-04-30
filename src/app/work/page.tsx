@@ -17,7 +17,7 @@ function CaseStudies({
     caseStudies: Array<MDXEntry<CaseStudy>>
 }) {
     return (
-        <Container className="mt-40">
+        <Container className="my-40">
             <FadeIn>
                 <h2 className="font-display text-2xl font-semibold text-neutral-950">
                     Case studies
@@ -30,12 +30,6 @@ function CaseStudies({
                             <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
                                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                                     <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                                        <Image
-                                            src={caseStudy.logo}
-                                            alt=""
-                                            className="h-16 w-16 flex-none"
-                                            unoptimized
-                                        />
                                         <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
                                             {caseStudy.client}
                                         </h3>
@@ -43,11 +37,6 @@ function CaseStudies({
                                     <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                                         <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
                                             {caseStudy.service}
-                                        </p>
-                                        <p className="text-sm text-neutral-950 lg:mt-2">
-                                            <time dateTime={caseStudy.date}>
-                                                {formatDate(caseStudy.date)}
-                                            </time>
                                         </p>
                                     </div>
                                 </div>
@@ -106,7 +95,6 @@ export default async function Work() {
                     We have been recognised as the contractor that “Delivers”
                 </p>
             </PageIntro>
-
             <CaseStudies caseStudies={caseStudies} />
         </>
     )

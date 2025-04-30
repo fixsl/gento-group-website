@@ -75,7 +75,7 @@ export default async function CaseStudyLayout({
                     </FadeIn>
                 </header>
 
-                <Container className="mt-24 sm:mt-32 lg:mt-40">
+                <Container className="my-24 sm:my-32 lg:my-40">
                     <FadeIn>
                         <MDXComponents.wrapper>{children}</MDXComponents.wrapper>
                     </FadeIn>
