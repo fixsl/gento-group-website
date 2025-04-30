@@ -2,8 +2,7 @@ import { Metadata } from "next";
 
 import HeroSection from "@/src/components/HeroSection";
 import ProjectsSection from "@/src/components/ProjectsSection";
-import ServicesSection from "@/src/components/ServicesSection";
-import UpdatedServices from "../components/UpdatedServices";
+import ServicesSection from "../components/ServicesSection";
 
 export const metadata: Metadata = {
   description:
@@ -14,8 +13,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <HeroSection />
-      {/* <ServicesSection /> */}
-      <UpdatedServices />
+      <ServicesSection />
       <ProjectsSection />
     </div>
   );
