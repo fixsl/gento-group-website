@@ -5,7 +5,7 @@ import { FadeIn } from './FadeIn'
 
 const HeroSection = () => {
     return (
-        <div className="relative">
+        <div className="relative flex-col lg:flex-row lg:justify-between ">
             <div className="mx-auto max-w-7xl">
                 <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
                     <svg
@@ -36,7 +36,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <FadeIn className="bg-gray-50 mb-16 md:mb-0 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <FadeIn className="bg-gray-50 mb-0 h-full md:mb-0 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <Image
                     alt="hillcutt-road-roundabout"
                     src={hillCutRoadImage}
