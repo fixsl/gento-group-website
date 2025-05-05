@@ -115,21 +115,10 @@ export default function ContactUs() {
                             We specialize in transforming visions into roads and turning aspirations into reality.
                         </p>
                     </div>
-                    <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
+                    <div className="relative mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
                         <ContactForm />
                         <div className="lg:mt-6 lg:w-80 lg:flex-none">
-                            <img alt="" src="https://tailwindui.com/img/logos/workcation-logo-blue-600.svg" className="h-12 w-auto" />
-                            <figure className="mt-10">
-                                <blockquote className="text-lg font-semibold leading-8 text-gray-900">
-                                    <p>
-                                        Interested in exploring our projects or contemplating Gento Group of
-                                        Companies.SL.Ltd for your upcoming venture? Reach out to our team for in-depth
-                                        insights, consultations, or to discuss potential projects.
 
-                                    </p>
-                                </blockquote>
-
-                            </figure>
                         </div>
                     </div>
                     <Offices />
