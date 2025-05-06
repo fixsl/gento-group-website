@@ -6,6 +6,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
+import logo from "@/src/images/logo.jpeg"
+import Image from 'next/image'
+
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Construction', href: '/work' },
@@ -25,12 +28,20 @@ const Header = () => {
             <div className="mx-auto w-full flex">
                 <div className="px-6 pt-6 w-full lg:max-w-2xl xl:max-w-4xl lg:pl-8 lg:pr-0 xl:pl-12 xl:pr-12">
                     <nav aria-label="Global" className="flex items-center justify-between lg:justify-start">
-                        <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            <img
-                                alt="Your Company"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                className="h-8 w-auto"
+                        <span className="sr-only">Gento Group</span>
+                        <a href="/" className="hidden sm:block -m-1.5 p-1.5">
+                            <Image
+                                src={logo}
+                                alt="gento-group-logo"
+                                height={40}
+                            />
+                        </a>
+                        <a href="/" className="block sm:hidden -m-1.5 p-1.5">
+                            <span className="sr-only">Gento Group</span>
+                            <Image
+                                src={logo}
+                                alt="gento-group-logo"
+                                height={30}
                             />
                         </a>
                         <button
@@ -41,7 +52,7 @@ const Header = () => {
                             <span className="sr-only">Open main menu</span>
                             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
                         </button>
-                        <div className="hidden lg:ml-12 sm:flex sm:gap-x-12 lg:gap-x-14">
+                        <div className="hidden lg:ml-16 sm:flex sm:gap-x-12 lg:gap-x-14">
                             {navigation.map((item) => (
                                 <a
                                     key={item.name}
@@ -72,10 +83,10 @@ const Header = () => {
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img
-                                alt=""
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                className="h-8 w-auto"
+                            <Image
+                                src={logo}
+                                alt="Manufacturing"
+                                height={30}
                             />
                         </a>
                         <button
