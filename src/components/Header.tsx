@@ -33,7 +33,7 @@ const Header = () => {
                             <Image
                                 src={logo}
                                 alt="gento-group-logo"
-                                height={40}
+                                height={50}
                             />
                         </a>
                         <a href="/" className="block sm:hidden -m-1.5 p-1.5">
@@ -41,7 +41,7 @@ const Header = () => {
                             <Image
                                 src={logo}
                                 alt="gento-group-logo"
-                                height={30}
+                                height={35}
                             />
                         </a>
                         <button
