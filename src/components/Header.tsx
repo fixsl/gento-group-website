@@ -16,7 +16,6 @@ const navigation = [
     { name: 'Quarry', href: '/quarry' },
     { name: 'Services', href: '/#services' },
     { name: 'About', href: '/about' },
-    { name: 'Board', href: '/board-of-directors' },
 ]
 
 
@@ -56,7 +55,6 @@ const Header = () => {
                                     className={clsx("text-sm font-medium transition-colors hover:text-amber-700",
                                         (item.href === '/work' && pathName.startsWith('/work')) ||
                                         (item.href === '/about' && pathName === '/about') ||
-                                        (item.href === '/board-of-directors' && pathName.startsWith('/board-of-directors')) ||
                                         (item.href === '/quarry' && pathName.startsWith('/quarry')) ||
                                         (item.href === '/' && pathName === '/') ? 'text-green-900' : 'text-stone-600')}
                                 >
@@ -104,7 +102,6 @@ const Header = () => {
                                         className={clsx("-mx-3 block rounded-md px-3 py-3 text-base font-medium leading-7 transition-colors hover:bg-stone-50",
                                             (item.href === '/work' && pathName.startsWith('/work')) ||
                                             (item.href === '/about' && pathName === '/about') ||
-                                            (item.href === '/board-of-directors' && pathName.startsWith('/board-of-directors')) ||
                                             (item.href === '/quarry' && pathName.startsWith('/quarry')) ||
                                             (item.href === '/' && pathName === '/') ? 'text-green-900' : 'text-stone-700'
                                         )}
