@@ -3,7 +3,7 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 const features = [
     {
         name: 'Project Planning & Management',
-        description: 'Rerum repellat labore necessitatibus reprehenderit molestiae praesentium.',
+        description: 'Coordinated planning and project management to carry infrastructure work from early design through delivery.',
     },
     {
         name: 'Geotechnical Engineering',
@@ -14,7 +14,7 @@ const features = [
         description: 'Design and implementation of services for municipal and township development projects, including water, sewage, roads, and utility systems.'
     },
     {
-        name: ' Real Estate Development',
+        name: 'Real Estate Development',
         description: 'Development of private residential estates including the manufacturing and supply of construction materials such as blocks and concrete rings.'
     },
     {

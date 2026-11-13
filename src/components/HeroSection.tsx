@@ -19,15 +19,16 @@ const HeroSection = () => {
 
                     <div className="relative px-6 py-16 sm:py-40 lg:px-8 lg:py-48 lg:pr-0">
                         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                            <h1 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-5xl">
-                                Your premier partner in building and major civil construction
+                            <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-green-950 sm:text-5xl lg:text-6xl">
+                                Infrastructure for a more connected Sierra Leone
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Committed to excellence, we diligently pave the way for enhanced connectivity and strive to deliver unparalleled, seamless travel experiences                            </p>
+                            <p className="mt-6 max-w-xl text-lg leading-8 text-stone-600">
+                                Gento Group delivers roads, bridges and major civil works that strengthen connections between communities and support national growth.
+                            </p>
                             <div className="mt-10 flex items-center gap-x-6">
                                 <a
                                     href="/contact"
-                                    className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    className="rounded-sm bg-green-950 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-green-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-900"
                                 >
                                     Contact Us
                                 </a>

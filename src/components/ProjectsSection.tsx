@@ -1,57 +1,30 @@
-import Image from "next/image"
-
-import { Container } from "./Container"
 import { FadeIn } from "./FadeIn"
-import hillCutRoadImage from '@/images/hillcut-road.jpg'
-
-const services = [
-    {
-        id: 1,
-        title: 'Boost your conversion rate',
-        href: '#',
-        description:
-            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
-        datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
-        author: {
-            name: 'Michael Foster',
-            role: 'Co-Founder / CTO',
-            href: '#',
-            imageUrl:
-                'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-    },
-    // More services...
-]
 
 const ProjectsSection = () => {
     return (
-        <div className="bg-gray-100 py-24 sm:py-32 w-full">
-            <FadeIn className="mx-auto w-full px-6 lg:px-0">
-                <div className="mx-auto w-full text-center  text-gray-900">
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Projects</h2>
-                    <p className="mt-4 text-lg leading-8 text-gray-800">
-                        We are known as the contractor that “Delivers”
-                    </p>
-                    <p className="mt-4 text-lg leading-8 text-gray-800 ">
-                        We are the prefered contractor, ensuring that the customers
-                        needs are met with the utmost satisfaction.
-                    </p>
-                    <div className="mt-16">
+        <section className="w-full bg-white px-6 py-20 sm:py-28 lg:px-8">
+            <FadeIn className="mx-auto max-w-7xl">
+                <div className="grid gap-8 border-y border-stone-300 py-10 sm:py-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end lg:gap-16">
+                    <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-800">Our work</p>
+                        <h2 className="mt-4 max-w-xl font-serif text-4xl font-medium leading-tight tracking-tight text-green-950 sm:text-5xl">
+                            Infrastructure that moves us forward
+                        </h2>
+                    </div>
+                    <div className="max-w-2xl">
+                        <p className="text-base leading-7 text-stone-600 sm:text-lg sm:leading-8">
+                            From roads and bridges to marine infrastructure, our projects connect communities and create room for growth.
+                        </p>
                         <a
                             href="/work"
-                            className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                            className="mt-7 inline-flex items-center border-b border-green-950 pb-2 text-sm font-semibold text-green-950 transition hover:border-amber-700 hover:text-amber-800"
                         >
-                            See Collection
+                            Explore our projects <span className="ml-3" aria-hidden="true">→</span>
                         </a>
                     </div>
                 </div>
-
             </FadeIn>
-        </div>
+        </section>
     )
 }
 

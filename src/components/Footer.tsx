@@ -5,10 +5,11 @@ import { FadeIn } from '@/src/components/FadeIn'
 // import { Logo } from '@/components/Logo'
 const navigation = {
     main: [
-        { name: 'Projects', href: '/projects' },
+        { name: 'Projects', href: '/work' },
         { name: 'Services', href: '/#services' },
         { name: 'About', href: '/about' },
-        { name: 'Contact Us', href: '/contact' },
+        { name: 'Board of Directors', href: '/board-of-directors' },
+        { name: 'Contact', href: '/contact' },
     ],
     social: [
         {
@@ -49,25 +50,25 @@ const navigation = {
 
 export function Footer() {
     return (
-        <FadeIn className='border-t border-gray-900/10'>
+        <FadeIn className='border-t border-stone-200'>
             <footer className="bg-white">
-                <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-                    <nav aria-label="Footer" className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
+                <div className="mx-auto max-w-7xl overflow-hidden px-6 py-14 sm:py-16 lg:px-8">
+                    <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-9 gap-y-4 text-sm">
                         {navigation.main.map((item) => (
-                            <a key={item.name} href={item.href} className="text-gray-600 hover:text-gray-900">
+                            <a key={item.name} href={item.href} className="text-stone-600 transition hover:text-green-950">
                                 {item.name}
                             </a>
                         ))}
                     </nav>
-                    <div className="mt-16 flex justify-center gap-x-10">
+                    <div className="mt-10 flex justify-center gap-x-8">
                         {navigation.social.map((item) => (
-                            <a key={item.name} href={item.href} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
+                            <a key={item.name} href={item.href.trim()} target="_blank" rel="noopener noreferrer" className="text-stone-500 transition hover:text-green-950">
                                 <span className="sr-only">{item.name}</span>
                                 <item.icon aria-hidden="true" className="size-5" />
                             </a>
                         ))}
                     </div>
-                    <p className="mt-10 text-center text-sm/6 text-gray-600">&copy; 2025 Gento Group, Inc. All rights reserved.</p>
+                    <p className="mt-10 text-center text-xs text-stone-500">&copy; {new Date().getFullYear()} Gento Group of Companies Limited. All rights reserved.</p>
                 </div>
             </footer>
         </FadeIn>
