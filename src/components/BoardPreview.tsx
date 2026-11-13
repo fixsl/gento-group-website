@@ -22,17 +22,16 @@ export function BoardPreview() {
             Meet the Board <span className="ml-3" aria-hidden="true">→</span>
           </a>
         </div>
-        <ol className="divide-y divide-stone-300 border-y border-stone-300">
-          {directors.map((director, index) => (
+        <ul className="divide-y divide-stone-300 border-y border-stone-300">
+          {directors.map((director) => (
             <li key={director.name} className="flex items-baseline gap-5 py-4 sm:py-5">
-              <span className="w-7 shrink-0 text-xs font-semibold tracking-[0.12em] text-amber-800">{String(index + 1).padStart(2, '0')}</span>
               <div className="flex flex-1 flex-col justify-between gap-1 sm:flex-row sm:items-baseline sm:gap-6">
                 <span className="font-serif text-xl font-medium text-green-950 sm:text-2xl">{director.name}</span>
                 <span className="text-xs font-semibold uppercase tracking-[0.12em] text-stone-500">{director.role}</span>
               </div>
             </li>
           ))}
-        </ol>
+        </ul>
       </div>
     </section>
   )

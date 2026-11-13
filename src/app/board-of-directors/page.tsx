@@ -43,7 +43,7 @@ const directors = [
     title: 'Executive Director',
     classification: '',
     initials: 'GP',
-    portrait: '',
+    portrait: '/images/board/giovanni-pirrone.jpeg',
     portraitPosition: 'object-center',
     biography: [
       'Giovanni Pirrone is a civil engineer with three decades of experience in the design and delivery of roads, bridges, water infrastructure and marine works across Italy, Sierra Leone and The Gambia.',
