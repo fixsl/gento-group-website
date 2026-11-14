@@ -142,7 +142,7 @@ export default function BoardOfDirectorsPage() {
 
       <section aria-label="Directors" className="px-6 py-10 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          {directors.map((director, index) => (
+          {directors.map((director) => (
             <article
               key={director.name}
               className="grid gap-x-10 gap-y-8 border-b border-stone-300/80 py-12 first:pt-4 last:border-0 sm:py-16 md:grid-cols-[minmax(180px,240px)_minmax(0,1fr)] lg:gap-x-16"
@@ -151,10 +151,7 @@ export default function BoardOfDirectorsPage() {
                 <Portrait name={director.name} initials={director.initials} src={director.portrait} position={director.portraitPosition} />
               </div>
               <div>
-                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-800">{String(index + 1).padStart(2, '0')}</span>
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-stone-500">{director.classification || 'Board member'}</span>
-                </div>
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-stone-500">{director.classification || 'Board member'}</p>
                 <h2 className="mt-4 font-serif text-3xl font-medium leading-tight tracking-tight text-green-950 sm:text-4xl">{director.name}</h2>
                 <p className="mt-2 text-sm font-semibold uppercase tracking-[0.1em] text-amber-800">{director.title}</p>
                 <div className="mt-7 max-w-3xl space-y-4 text-[15px] leading-7 text-stone-700 sm:text-base sm:leading-8">
