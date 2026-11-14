@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import HeroSection from "@/src/components/HeroSection";
 import ProjectsSection from "@/src/components/ProjectsSection";
 import ServicesSection from "../components/ServicesSection";
+import { BoardPreview } from "@/src/components/BoardPreview";
 
 export const metadata: Metadata = {
   description:
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <ProjectsSection />
+      <BoardPreview />
     </div>
   );
 }
