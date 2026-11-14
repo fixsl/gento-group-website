@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
+import localFont from "next/font/local";
 
 import "../styles/tailwind.css";
 import { RootLayout } from "@/src/components/RootLayout";
 
-const inter = Inter({ subsets: ["latin"] });
+const siteSans = localFont({
+  src: "../../public/fonts/noto-sans-latin-regular.ttf",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +24,7 @@ export default function Layout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={siteSans.className}>
         <RootLayout>
           {children}
         </RootLayout>
