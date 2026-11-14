@@ -14,7 +14,7 @@ const directors = [
     classification: 'Independent Non-Executive Director',
     initials: 'MC',
     portrait: '/images/board/maurice-cole.png',
-    portraitPosition: 'object-[100%_center]',
+    portraitPosition: 'object-[100%_top]',
     biography: [
       'Maurice Cole is a Chartered Accountant with 36 years of experience in finance, banking and executive management, and brings deep board-level and governance experience to his role as Chairman of Gento Group of Companies Limited.',
       "Most recently, he served as Chief Finance Officer of Sierra Rutile Limited (2019–2025), where he directed the company's financial, commercial, procurement, tax and risk management functions. He led the negotiation of a tax incentive that reduced Sierra Rutile's tax burden by over 70 percent, delivering annual savings of more than US$6 million.",
@@ -31,9 +31,9 @@ const directors = [
     portrait: '/images/board/mohamed-kamara.png',
     portraitPosition: 'object-top',
     biography: [
-      "Mohamed Gento Kamara is the founder and Chief Executive Officer of Gento Group of Companies Limited, one of Sierra Leone's leading road construction and infrastructure firms, with assets valued at over US$150 million.",
+      'Mohamed Gento Kamara is the founder and Chief Executive Officer of Gento Group of Companies Limited, one of Sierra Leone’s leading road construction and infrastructure firms. The Group’s assets were valued at over US$150 million as of 2022, and that figure has since increased significantly with the company’s expansion into port infrastructure. Most notably, the Group is developing the US$75 million Kent Dry Port and logistics hub. Around US$30 million had been invested by mid-2026, and the project is expected to support more than 10,000 direct and indirect jobs, attract investment and strengthen national competitiveness.',
+      'Under the same concession, the Group is also advancing the development of the larger Banana Island Transshipment Port. Together, these projects are intended to ease congestion at the Queen Elizabeth II Quay in Freetown.',
       'Born and raised in Freetown, he began his business career in London in the late 1990s, building a mobile phone dealership with One-2-One and Orange and a chain of retail outlets across South London, before moving into real estate. Responding to an appeal from former President Ahmad Tejan Kabbah, he returned to Sierra Leone to help rebuild the economy after the civil war and to mentor young Sierra Leoneans.',
-      'Under his leadership, the Group has grown into a major delivery partner on national infrastructure. In 2024, it was licensed to develop a new seaport facility, a project expected to support more than 10,000 direct and indirect jobs, attract investment and strengthen national competitiveness.',
       'A committed philanthropist, Mr Kamara has supported more than 3,000 young people and women in starting and growing their own enterprises. He also sponsors a range of charities and community initiatives, including anti-malnutrition campaigns and the COVID-19 response.',
       'He was educated at Kissy Municipal Primary School and Ahmadiyya Muslim Secondary School in Freetown, and later studied at Lewisham College, London.',
     ],
@@ -43,7 +43,7 @@ const directors = [
     title: 'Executive Director',
     classification: '',
     initials: 'GP',
-    portrait: '/images/board/giovanni-pirrone.jpeg',
+    portrait: '/images/board/giovanni-pirrone-white.png',
     portraitPosition: 'object-center',
     biography: [
       'Giovanni Pirrone is a civil engineer with three decades of experience in the design and delivery of roads, bridges, water infrastructure and marine works across Italy, Sierra Leone and The Gambia.',
