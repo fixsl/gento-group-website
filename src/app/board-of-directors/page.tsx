@@ -87,13 +87,13 @@ const directors = [
 function Portrait({ name, initials, src, position }: { name: string; initials: string; src: string; position: string }) {
   if (src) {
     return (
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-stone-200">
+      <div className="relative aspect-[4/5] w-full overflow-hidden bg-white">
         <Image
           src={src}
           alt={name}
           fill
           sizes="(max-width: 768px) 100vw, 240px"
-          className={`object-cover ${position}`}
+          className={`${name === 'Michala Mackay' || name === 'Maurice Nathaniel Cole, FCCA' ? 'object-contain' : 'object-cover'} ${position}`}
         />
       </div>
     )
@@ -121,7 +121,7 @@ export default function BoardOfDirectorsPage() {
     <main className="bg-[#fbfaf7]">
       <section className="bg-green-950 px-6 pb-16 pt-32 text-white sm:pb-20 sm:pt-40 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-300">Governance</p>
+          <p className="text-xs font-semibold tracking-[0.12em] text-amber-300">Gento Group Sierra Leone</p>
           <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end">
             <div>
               <h1 className="max-w-4xl font-serif text-5xl font-medium leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
