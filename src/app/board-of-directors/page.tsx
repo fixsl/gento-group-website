@@ -26,13 +26,13 @@ const directors = [
   {
     name: 'Mohamed Gento Kamara',
     title: 'Founder and Chief Executive Officer',
-    classification: 'Executive Director',
+    classification: 'Executive Chairman and CEO',
     initials: 'MK',
     portrait: '/images/board/mohamed-kamara.png',
     portraitPosition: 'object-top',
     biography: [
       'Mohamed Gento Kamara is the founder and Chief Executive Officer of Gento Group of Companies Limited, one of Sierra Leone’s leading road construction and infrastructure firms. The Group’s assets were valued at over US$150 million as of 2022, and that figure has since increased significantly with the company’s expansion into port infrastructure. Most notably, the Group is developing the US$75 million Kent Port and logistics hub. Around US$35 million had been invested by mid-2026, and the project is expected to support more than 10,000 direct and indirect jobs, attract investment and strengthen national competitiveness.',
-      'Under the same concession, the Group is also advancing the development of the larger Banana Island Transshipment Port. Together, these projects are intended to ease congestion at the Queen Elizabeth II Quay in Freetown.',
+      'Under the same concession, the Group is also advancing the development of the larger Banana Island Transshipment Port. Together, these projects are intended to ease congestion at the Queen Elizabeth II Quay in Freetown and serve as shared infrastructure that will integrate and enhance West African maritime trade with the world.',
       'Born and raised in Freetown, he began his business career in London in the late 1990s, building a mobile phone dealership with One-2-One and Orange and a chain of retail outlets across South London, before moving into real estate. Responding to an appeal from former President Ahmad Tejan Kabbah, he returned to Sierra Leone to help rebuild the economy after the civil war and to mentor young Sierra Leoneans.',
       'A committed philanthropist, Mr Kamara has supported more than 3,000 young people and women in starting and growing their own enterprises. He also sponsors a range of charities and community initiatives, including anti-malnutrition campaigns and the COVID-19 response.',
       'He was educated at Kissy Municipal Primary School and Ahmadiyya Muslim Secondary School in Freetown, and later studied at Lewisham College, London, but was unable to complete his studies due to several constraints.',
